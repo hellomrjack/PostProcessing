@@ -421,10 +421,10 @@ namespace UnityEngine.Rendering.PostProcessing
             // when ResetProjectionMatrix() is called and will break transparent rendering if TAA
             // is switched off and the FOV or any other camera property changes.
 
-#if UNITY_2018_2_OR_NEWER
-            if (!m_Camera.usePhysicalProperties)
-#endif
-                m_Camera.ResetProjectionMatrix();
+//#if UNITY_2018_2_OR_NEWER
+//            if (!m_Camera.usePhysicalProperties)
+//#endif
+//                m_Camera.ResetProjectionMatrix();
             m_Camera.nonJitteredProjectionMatrix = m_Camera.projectionMatrix;
 
 #if ENABLE_VR
